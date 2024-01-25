@@ -1,0 +1,43 @@
+:root.dark {
+  --scroll-color-bar: 255, 250, 240, 0.4;
+  --scroll-color-bar-hover: 255, 250, 240, 0.6;
+  --scroll-color-bg: 255, 255, 255, 0.1;
+}
+:root.light {
+  --scroll-color-bar: 125, 95, 40, 0.4;
+  --scroll-color-bar-hover: 125, 95, 40, 0.6;
+  --scroll-color-bg: 255, 255, 255, 0.1;
+}
+
+.rtp_scroll {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.rtp_scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.rtp_scroll::-webkit-scrollbar-track {
+  background: rgba(var(--scroll-color-bg));
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.rtp_scroll::-webkit-scrollbar-thumb {
+  background: rgba(var(--scroll-color-bar));
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.rtp_scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--scroll-color-bar-hover));
+}
