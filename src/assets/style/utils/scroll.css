@@ -3,7 +3,7 @@
   --scroll-color-bar-hover: 255, 250, 240, 0.6;
   --scroll-color-bg: 255, 255, 255, 0.1;
 }
-:root.light {
+:root {
   --scroll-color-bar: 125, 95, 40, 0.4;
   --scroll-color-bar-hover: 125, 95, 40, 0.6;
   --scroll-color-bg: 255, 255, 255, 0.1;
